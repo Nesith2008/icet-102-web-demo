@@ -128,3 +128,16 @@ var mark1=75;
      total += rainData[i];
     }
      console.log(total/rainData.length);
+
+     
+    function getCharactors(){
+        var input = document.getElementById('user').value;
+        var converted = input.toUpperCase();
+        var output="[";
+        for(var i=0; i< input.length;i++){
+            output+=converted.charAt(i)+",";
+        }
+        output+="]"
+        document.getElementById('output').innerHTML=output;
+    }
+
