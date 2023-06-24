@@ -129,7 +129,7 @@ var mark1=75;
     }
      console.log(total/rainData.length);
 
-     
+
     function getCharactors(){
         var input = document.getElementById('user').value;
         var converted = input.toUpperCase();
@@ -140,4 +140,112 @@ var mark1=75;
         output+="]"
         document.getElementById('output').innerHTML=output;
     }
+
+    //////////////////////////////////////
+
+//data types
+
+var stdName = "Yasindu" //----> string
+var stdAge = 24 //-----> number
+var stdMark = 90.67 //-----> number
+var isMarried = true //-----> boolean
+
+//js object
+var myCar = { brand: "Toyota", model: "Corolla", engNo: "AE12344", color: "black" } //----> object
+
+//JSON Objects
+
+// {
+//     "name":"Yasindu",
+//     "address":"panadura",
+//     "age":26
+// }
+
+/////////////////////////////////////////
+
+//variable types
+//var, let, const
+
+
+var val1 = 10;
+val1 = 89;
+
+let var2 = 90;
+var2 = 67;
+
+// const var3 = 56;
+// var3=78;
+
+//////////////////////////
+
+var val3 = 45;
+var val3 = 34;
+
+// let val4 = 78;
+// let val4 = 57;
+
+// const val5 = 89;
+// const val5 = 34;
+
+/////////////////////////
+
+
+//var is globle scope
+var val6 = 23;
+
+{
+    console.log(val6);
+    var val7 = 34;
+}
+
+console.log(val7);
+
+
+let val8 = 23;
+
+{
+    console.log(val8);
+    let val9 = 34;
+}
+
+console.log(val9);
+
+
+const val10 = 23;
+
+{
+    console.log(val10);
+    const val11 = 34;
+}
+
+console.log(val11);
+
+//////////////////////////////
+
+function saveData() {
+
+}
+
+saveData();
+
+const saveData = function () {
+
+}
+
+saveData();
+
+//arrow functions
+const deleteData = () => {
+
+}
+
+deleteData();
+
+///////////////////////////
+
+function printData(name,age){
+    console.log(name+" "+age);
+    return name;
+}
+
 
